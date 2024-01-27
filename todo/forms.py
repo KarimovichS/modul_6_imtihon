@@ -1,9 +1,9 @@
 from django.forms import ModelForm
 
-from .models import tasklist
+from .models import Todo
 
 
-class todo_task(ModelForm):
+class todo_forms(ModelForm):
     class Meta:
-        model = tasklist
-        fields = ['title','memo','important']
+        model = Todo
+        fields = ['title', 'content', 'important']
